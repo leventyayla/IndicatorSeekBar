@@ -1,8 +1,9 @@
 apply plugin: 'com.android.application'
 
 android {
+    namespace 'com.warkiz.indicatorseekbar'
     compileSdkVersion 27
-    buildToolsVersion '27.0.3'
+    buildToolsVersion '30.0.3'
     defaultConfig {
         applicationId "com.warkiz.indicatorseekbar"
         minSdkVersion 24
@@ -16,6 +17,9 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
+    }
+    buildFeatures {
+        buildConfig true
     }
 }
 
